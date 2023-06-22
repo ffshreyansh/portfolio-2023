@@ -10,9 +10,13 @@ body{
     background-color: yellow;
     color: black;
 }
-
+.hed button{
+    margin: 0;
+    scale: 1.3;
+    padding: 0;
+}
 *{
-    font-family: 'Inter', Courier, monospace;
+    font-family: 'Satoshi', Courier, monospace;
 }
 .wa{
     width: 2048px;
@@ -61,4 +65,70 @@ body{
         padding-left: 2rem;
         padding-top: 0;
     }
+    .para-contact{
+        /* max-width: 3rem; */
+    }
+    .mail-contact{
+        font-size: 1.15rem;
+        margin-top: 30px;
+    }
+    .pg1-cont{
+        width: 100%;
+    }
+    .pg1-cont h1{
+        font-size: 3.5rem;
+    }
+    .cont{
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 10px;
+    }
+    .cont2{
+        flex-direction: column;
+        gap: 10px;
+        font-size: 24px;
+    }
+    .cont2 a{
+        font-size: 1.25rem;
+    }
+    .cont0{
+        margin-top: 0;
+    }
+    .title-cont{
+        margin-top: 1rem;
+        
+    }
+    .title-cont .para1{
+        font-size: 1.25rem;
+    }
+    .contact-sec{
+        margin-top: 8rem;
+        padding: 1.5rem;
+    }
+    .address p{
+     font-size: 1.25rem;   
+    }
+    .hed img{
+        max-width: 88%;
+    }
+    .para-home{
+        line-height: 1.5;
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    .img-home{
+        display: none;
+    }
   }
+
+  .bg-morph{
+    background: rgba( 0, 0, 0, 0.80 );
+/* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+backdrop-filter: blur( 10.5px );
+-webkit-backdrop-filter: blur( 10.5px );
+border-radius: 0px;
+/* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+  }
+
+
+  

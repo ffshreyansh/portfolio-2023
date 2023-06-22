@@ -1,4 +1,5 @@
 "use client"
+import Footer from "@components/Footer";
 import "../styles/globals.css";
 import { motion } from 'framer-motion';
 
@@ -20,7 +21,7 @@ const Home = () => {
 
 
   return (
-  <section className="sm:px-6 lg:px-32 mt-32 ">
+  <section className="sm:px-6 lg:px-32 mt-52 ">
 <div className="pg1">
       <motion.p
         className="max-w-2xl break-words font-satoshi text-white text-3xl para1"
@@ -57,6 +58,9 @@ const Home = () => {
             scroll to explore
           </motion.p>
         </motion.div>
+
+       
+
       </div>
     </div>
 
@@ -99,7 +103,19 @@ const Home = () => {
       </div>
 
     </motion.div>
+    <motion.div className="w-full mt-18">
+          <motion.p className="text-white font-medium text-4xl leading-tight para-home">
+          W strive to bring innovation and creativity to every project we undertake. Our team of experts works closely with our clients to understand their needs and deliver outstanding solutions. We are dedicated to creating products exceed our client's expectations.
+          </motion.p>
+        </motion.div>
 
+    <div className="image-container img-home w-full mt-32">
+      <img src="/assets/images/t2.webp" className="h-96 w-full" alt="" />
+    </div>
+    <div>
+      
+    </div>
+  <Footer/>
   </section>
 
   );

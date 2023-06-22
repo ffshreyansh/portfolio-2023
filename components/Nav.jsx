@@ -1,13 +1,13 @@
-import { Fragment } from 'react'
+
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+// import resume from '@public/assets'
 
 const navigation = [
-//   { name: 'Projects', href: '#', current: true },
-{ name: 'About', href: '#', current: false },
-  { name: 'Experience', href: '#', current: true },
-  
-  { name: 'Resume ›', href: '#', current: false },
+  { name: 'Home', href: '/', current: false },
+  { name: 'Projects', href: '/projects', current: false },
+  { name: 'Contact', href: '/contact', current: false },
+  { name: 'Resume ›', href: '/assets/images/resume.pdf', current: false, className: 'resume-link', target: "_blank" }, // Add className for Resume
 ]
 
 function classNames(...classes) {
@@ -19,8 +19,8 @@ export default function Example() {
     <Disclosure as="nav" className="bg-black">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-8xl p-2 sm:px-6 lg:px-32">
-            <div className="relative flex h-16 items-center justify-between">
+          <div className="fixed top-0 mx-auto w-full max-w-8xl p-6 sm:px-6 lg:px-32 bg-morph z-50">
+            <div className="relative flex h-16 items-center justify-between hed">
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="px-3 mt-6 inline-flex items-center justify-center rounded-md p-2 text-white hover: hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -33,19 +33,21 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-start justify-start sm:items-stretch sm:justify-between rew">
-                <div className="flex flex-shrink-0 items-start pt-14">
-                 {/* <h1 className='text-white text-4xl font-nunito'>shreyansh</h1> */}
-                 <img src="/assets/images/lg.png" width={180} alt="" />
+                <div className="flex flex-shrink-0 items-start ">
+                  <img src="/assets/images/sh-01.png" width={180} alt="" />
                 </div>
-                <div className="hidden sm:ml-6 sm:block lg:pt-14">
+                <div className="hidden sm:ml-6 sm:block ">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
+                        target={item.target}
                         className={classNames(
-                          item.current ? ' text-white' : 'text-gray-300  hover:text-white',
-                          ' px-3 py-2 text-xl font-regular'
+                          item.current ? 'text-white' : 'text-gray-300 hover:text-white',
+                          'px-3 py-2 text-xl font-regular',
+                          item.className, // Include className for Resume item
+                          item.target
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -55,7 +57,6 @@ export default function Example() {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -68,7 +69,8 @@ export default function Example() {
                   href={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    'block rounded-md px-3 py-2 text-base font-medium',
+                    item.className // Include className for Resume item
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >

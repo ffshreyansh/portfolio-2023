@@ -13,7 +13,6 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
         yeseva: ['Yeseva One', 'cursive'],
         nunito: ['Nunito', 'sans-serif'],
-        shepp: ['Mrs Sheppards', 'sans-serif'],
       },
       colors: {
         'grey': "#666"

@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from 'react';
 import Nav from "@components/Nav";
+import Footer from "@components/Nav";
 import "@styles/globals.css";
 
 export const metadata = {
@@ -37,6 +38,7 @@ const RootLayout = ({ children }) => {
         <main className=''>
           <Nav/>
           {children}
+          {/* <Footer/> */}
         </main>
       </body>
     </html>
