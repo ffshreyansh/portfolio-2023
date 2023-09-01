@@ -30,7 +30,7 @@ const Home = () => {
         variants={fadeInVariants}
         transition={{ duration: 1.5, ease: [0.6, -0.05, 0.01, 0.99] }}
       >
-        We specialize in crafting exceptional digital experiences to help our clients achieve their business goals.
+        A spectacular Flutter developer who turns ideas into cutting-edge apps.
       </motion.p>
       <div className="flex justify-between items-end title">
         <motion.h1
@@ -40,7 +40,7 @@ const Home = () => {
           variants={fadeInVariants}
           transition={{ duration: 1.5, ease: [0.6, -0.05, 0.01, 0.99] }}
         >
-          Web Developer & Designer
+          Flutter Developer & Programmer
         </motion.h1>
         <motion.div
           initial="hidden"
@@ -49,10 +49,10 @@ const Home = () => {
           transition={{ duration: 1.5, ease: [0.6, -0.05, 0.01, 0.99] }}
         >
           <motion.a
-            href="mailto:shreyanshkumar058@gmail.com"
+            href="mailto:bhagatnivedita469@gmail.com"
             className="text-white font-medium text-xl"
           >
-            shreyanshkumar058@gmail.com
+            bhagatnivedita469@gmail.com
           </motion.a>
           <motion.p className="text-gray-700 font-bold text-lg">
             scroll to explore
@@ -71,23 +71,23 @@ const Home = () => {
           transition={{ duration: 1.5, ease: [0.6, -0.05, 0.01, 0.99] }}>
       <div className="w-full h-1/2 md:w-1/2 lg:w-1/2 pl-0 p-8 image-one">
         <div className="image-container">
-          <img className="w-full h-auto rounded-3xl object-contain image" src="/assets/images/uxhackmock.png" alt="Image 1" />
+          <img className="w-full h-auto rounded-3xl object-contain image" src="/assets/images/artsense.jpg" alt="Image 1" />
         </div>
         <div className="pl-0 pb-0 p-4">
-          <a href="/project-1" className="text-white font-medium text-lg mt-3">Project Name 1 <i className="fa-solid fa-arrow-up-right-from-square font-regular text-gray-700"></i></a>
+          <a href="/project-1" className="text-white font-medium text-lg mt-3">Artsense App<i className="fa-solid fa-arrow-up-right-from-square font-regular text-gray-700 ml-2"></i></a>
         </div>
       </div>
       <div className="w-full h-1/2 md:w-1/2 lg:w-1/2 pl-0 p-8 image-one">
         <div className="image-container">
-          <img className="w-full h-auto rounded-3xl object-contain image" src="/assets/images/medme.png" alt="Image 1" />
+          <img className="w-full h-auto rounded-3xl object-contain image" src="/assets/images/food.png" alt="Image 1" />
         </div>
         <div className="pl-0 pb-0 p-4">
-          <a href="/project-1" className="text-white font-medium text-lg mt-3">Project Name 1 <i className="fa-solid fa-arrow-up-right-from-square font-regular text-gray-700"></i></a>
+          <a href="/project-1" className="text-white font-medium text-lg mt-3">Hunger Wheels<i className="ml-2 fa-solid fa-arrow-up-right-from-square font-regular text-gray-700"></i></a>
         </div>
       </div>
       <div className="w-full md:w-1/2 lg:w-1/2 pl-0 p-8 image-one">
         <div className="image-container">
-          <img className="w-full h-auto rounded-3xl object-contain image" src="/assets/images/sushilap-work (2).png" alt="Image 1" />
+          <img className="w-full h-auto rounded-3xl object-contain image" src="/assets/images/artsense2.jpg" alt="Image 1" />
         </div>
         <div className="pl-0 pb-0 p-4">
           <a href="/project-1" className="text-white font-medium text-lg mt-3">Project Name 1 <i className="fa-solid fa-arrow-up-right-from-square font-regular text-gray-700"></i></a>

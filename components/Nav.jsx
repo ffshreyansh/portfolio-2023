@@ -12,6 +12,7 @@ const navigation = [
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
+
 }
 
 export default function Example() {
@@ -34,9 +35,9 @@ export default function Example() {
               </div>
               <div className="flex flex-1 items-start justify-start sm:items-stretch sm:justify-between rew">
                 <div className="flex flex-shrink-0 items-start ">
-                  <img src="/assets/images/sh-01.png" width={180} alt="" />
+                  <img src="/assets/images/lg.png" width={120} alt="" />
                 </div>
-                <div className="hidden sm:ml-6 sm:block ">
+                <div className="hidden sm:ml-6 sm:block my-auto">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
